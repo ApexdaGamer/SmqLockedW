@@ -1,0 +1,28 @@
+<html>
+  <body>
+    <script>
+    window.onload = init
+    function init() {
+      var id = document.getElementById("idinput").value;
+      var vidembed = "https://youtube.com/embed/" + id;
+      document.getElementById("frameid").src = vidembed;
+    };
+    function sleep(milliseconds) {
+      const date = Date.now();
+      let currentDate = null;
+      do {
+        currentDate = Date.now();
+      } while (currentDate - date < milliseconds);
+    }
+    function searchPress() {
+      document.getElementById('frameid').src += '';
+      sleep(1500);
+      var id = document.getElementById("idinput").value;
+      vidembed = "https://youtube.com/embed/" + id;
+      document.getElementById("frameid").src = vidembed;
+    }; </script>
+    <iframe name="iframe1" id="frameid" allowfullscreen src="http://smqap.wittnet.net/yt/"></iframe>
+    <button type="button" onclick="searchPress();">Search</button>
+    <textarea id="idinput">Enter ID</textarea>
+  </body>
+</html>

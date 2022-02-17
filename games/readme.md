@@ -1,2 +1,2 @@
-Games Directory
+# Games Directory
 e
